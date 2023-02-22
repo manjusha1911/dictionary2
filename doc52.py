@@ -9,13 +9,24 @@ Original Dictionary:
 ['f', 'i', 'g', 'd', 'c']
 '''
 
+dict={'a': 5, 'b': 14, 'c': 32, 'd': 35, 'e': 24, 'f': 100, 'g': 57, 'h': 8, 'i': 100}
+val=dict.values()
+l=list(val)
+m=l[0]
+m1=l[0]
+i=0
+while i<len(l):
+    a=[]
+    if l[i]>m:
+        m=l[i]
+    a.append(m)
+    b=[]
+    if l[i]<m1:
+        m1=l[i]
+    b.append(m1)
+    i+=1
+print("maximum value:",a)
+print("minimum value:",b)
 
-def test(dictt, N):
-    result = sorted(dictt, key=dictt.get, reverse=True)[:N]
-    return result 
-dictt = {'a':5, 'b':14, 'c': 32, 'd':35, 'e':24, 'f': 100, 'g':57, 'h':8, 'i': 100}
-N = 1
-# N = 2
-# N = 5
-print(N,"maximum value(s) in the said dictionary:")
-print(test(dictt, N))
+
+

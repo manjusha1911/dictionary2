@@ -5,11 +5,7 @@ Original Dictionary:
 Clear the list values in the said dictionary:
 {'C1': [], 'C2': [], 'C3': []}
 '''
-
-def test(dictionary):
-    for key in dictionary:
-        dictionary[key].clear()
-    return dictionary
-dictionary = {'C1' : [10,20,30],'C2' : [20,30,40],'C3' : [12,34]}
-print("Clear the list values in the said dictionary:")
-print(test(dictionary)) 
+a={'C1': [10, 20, 30], 'C2': [20, 30, 40], 'C3': [12, 34]}
+for key in a:
+    a[key].clear()
+print("The dictionary after clearing value list :\n" + str(a))

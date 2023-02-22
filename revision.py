@@ -15,20 +15,24 @@
   
  
  
-n=int(input("enter the number:")) 
-i=1
-d={}
-while i<=n:
-    name=input("enter the name:")
-    i+=1
-    j=0
-    while j<3:
-        k=input("enter key:")
-        v=input("enter value:")
-        j+=1
-    d[k]=v
-print(d)
+# n=int(input("enter the number:")) 
+# i=1
+# d={}
+# while i<=n:
+#     name=input("enter the name:")
+#     i+=1
+#     j=0
+#     while j<3:
+#         k=input("enter key:")
+#         v=input("enter value:")
+#         j+=1
+#     d[k]=v
+# print(d)
 
-    
-
-    
+def m(s):
+    d={}
+    for k,v in s:
+        d.setdefault(k,[]).append(v)
+    return(d)
+s = [('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
+print(m(s))

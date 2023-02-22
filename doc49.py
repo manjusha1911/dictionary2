@@ -5,8 +5,8 @@ math
 chemistry
 '''
 
-num = {'physics': 80, 'math': 90, 'chemistry': 86}
+n= {'physics': 80, 'math': 90, 'chemistry': 86}
 i=0
-while i<len(num):
-    print(list(num)[i])
+while i<len(n):
+    print(list(n)[i])
     i+=1

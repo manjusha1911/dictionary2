@@ -45,14 +45,14 @@
 # print(x)
 
 # 5.Items:..............................
-# a = {
-#   "brand": "Ford",
-#   "model": "Mustang",
-#   "year": 1964
-# }
-# x = a.items()
-# # a=set(x)
-# print(x)
+a = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = a.items()
+# a=set(x)
+print(x)
 
 # car = {
 #   "brand": "Ford",

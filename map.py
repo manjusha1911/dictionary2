@@ -13,5 +13,14 @@
 #   return a + b
 # x = map(myfunc, ('apple', 'banana', 'cherry'), ('orange', 'lemon', 'pineapple'))
 # print(list(x))
-a=input().split()
-# a=list(map(int,input().split))
+'''normal function'''
+# def s(n):
+#     return n*n
+# n=int(input("enter the number:"))
+# print(s(n))
+# def s(n n*n
+# print(list(map(s,l)))
+'''Or'''
+l=[1,2,3,4,5,6,7,8]
+print(list(map(lambda n:n*n,l )))
+
